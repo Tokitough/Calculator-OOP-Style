@@ -17,3 +17,20 @@ class User_Interface:
     def user_input2(self):
         num_2 = float(input("Enter second number: "))
         return num_2
+    
+class Calculator:
+    def add(self, num_1, num_2):
+        answer = num_1 + num_2
+        return answer
+    
+    def subtract(self, num_1, num_2):
+        answer = num_1 - num_2
+        return answer
+    
+    def multiply(self, num_1, num_2):
+        answer = num_1 * num_2
+        return answer
+    
+    def divide(self, num_1, num_2):
+        answer = num_1 / num_2
+        return answer
