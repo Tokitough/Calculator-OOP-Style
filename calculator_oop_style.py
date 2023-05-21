@@ -1,8 +1,14 @@
 from user_interface import User_Interface
 
-calculator()
-# Ask user to choose an operation
+ui = User_Interface()
+
+# Ask user to choose an operation 
+ui.ask_operation()
 # Get user input for operation
+operation = ui.input_operation
+
+        
+        
 # Get user input for two numbers
 # Perform operation based on user input
 # Display the result
