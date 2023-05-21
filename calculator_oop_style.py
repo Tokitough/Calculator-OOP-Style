@@ -4,12 +4,13 @@ ui = User_Interface()
 
 # Ask user to choose an operation 
 ui.ask_operation()
-# Get user input for operation
-operation = ui.input_operation
 
-        
-        
+# Get user input for operation
+operation = ui.input_operation()
+
 # Get user input for two numbers
+num_1 = ui.user_input1()
+num_2 = ui.user_input2()
 # Perform operation based on user input
 # Display the result
 # Ask if the user wants to perform another calculation

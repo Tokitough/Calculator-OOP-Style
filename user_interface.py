@@ -10,6 +10,10 @@ class User_Interface:
         operation = int(input("What operation would you like to use? (1-4): "))
         return operation
        
-    def user_input(self):
-        num_1 = float(input("Enter a number: "))
+    def user_input1(self):
+        num_1 = float(input("Enter first number: "))
         return num_1
+
+    def user_input2(self):
+        num_2 = float(input("Enter second number: "))
+        return num_2
