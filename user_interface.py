@@ -26,7 +26,15 @@ class User_Interface:
         else: 
             print("Thank you for using the simple calculator app!")
             
-           
+    def inp_operation_error(self):
+        print("Error! Not a valid input for operation. Try again.")
+    
+    def zero_div_error(self):
+        print("Error: Cannot divide by zero!")
+        
+    def value_error(self):
+        print("Error: Invalid input!")
+        
 class Calculator:
     def add(self, num_1, num_2):
         answer = num_1 + num_2
