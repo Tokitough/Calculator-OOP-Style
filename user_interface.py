@@ -1,5 +1,3 @@
-from calculator_oop_style import calculator
-
 class User_Interface:
     def ask_operation(self):
         print("Please choose an operation: \n"
@@ -23,12 +21,12 @@ class User_Interface:
     def retry(self):
         another_calculation = input("Do you want to perform another calculation? (y/n): ")
         if another_calculation.lower() == 'y':
-            calculator()
-        else:
-            # End if user does not want to perform another calculation
-            print("Thank you for using the simple calculator app") 
-        
-    
+            return True
+        # End if user does not want to perform another calculation
+        else: 
+            print("Thank you for using the simple calculator app!")
+            
+           
 class Calculator:
     def add(self, num_1, num_2):
         answer = num_1 + num_2

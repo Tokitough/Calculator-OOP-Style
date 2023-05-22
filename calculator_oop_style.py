@@ -13,6 +13,10 @@ def calculator():
         # Get user input for operation
         operation = ui.input_operation()
         
+        # Get user input for two numbers
+        num_1 = ui.user_input1()
+        num_2 = ui.user_input2()
+        
         # Perform operation based on user input
         if operation == 1:
             answer = calc.add(num_1, num_2)
@@ -24,25 +28,22 @@ def calculator():
             answer = calc.divide(num_1, num_2)   
         else:
             print("Error! Not a valid input for operation. Try again.")
-            calculator()
-            
-        # Get user input for two numbers
-        num_1 = ui.user_input1()
-        num_2 = ui.user_input2()
+            calculator()          
 
         # Display the result
         print(answer)
+        
         # Ask if the user wants to perform another calculation
-        ui.retry
+        if ui.retry() == True:
+            calculator()
         
     except ZeroDivisionError:
             # Handle division by zero error
-            print("Error: Cannot divide by zero.")
-            calc.calculator()
+            print("Error: Cannot divide by zero!")
+            calculator()
     except ValueError:
             # Handle invalid input error
-            print("=" * 45)
-            print("Error: Invalid input.")
-            calc.calculator()
+            print("Error: Invalid input!")
+            calculator()
         
 calculator()
