@@ -27,11 +27,11 @@ def calculator():
         elif operation == 4:
             answer = calc.divide(num_1, num_2)   
         else:
-            print(ui.inp_operation_error)
+            ui.inp_operation_error()
             calculator()          
 
         # Display the result
-        print(answer)
+        ui.result(answer)
         
         # Ask if the user wants to perform another calculation
         if ui.retry() == True:
@@ -39,12 +39,12 @@ def calculator():
     
     # Handle division by zero error    
     except ZeroDivisionError:
-            print(ui.zero_div_error)
+            ui.zero_div_error()
             calculator()
     
     # Handle invalid input error
     except ValueError:
-            print(ui.value_error)
+            ui.value_error()
             calculator()
         
 calculator()
