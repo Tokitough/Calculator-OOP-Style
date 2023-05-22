@@ -36,13 +36,14 @@ def calculator():
         # Ask if the user wants to perform another calculation
         if ui.retry() == True:
             calculator()
-        
+    
+    # Handle division by zero error    
     except ZeroDivisionError:
-            # Handle division by zero error
             print(ui.zero_div_error)
             calculator()
+    
+    # Handle invalid input error
     except ValueError:
-            # Handle invalid input error
             print(ui.value_error)
             calculator()
         
