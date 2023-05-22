@@ -30,12 +30,14 @@ class User_Interface:
         
     # Perform another calculation
     def retry(self):
-        another_calculation = input("Do you want to perform another calculation? (y/n): ")
+        another_calculation = input("Perform another calculation? (y/n): ")
         if another_calculation.lower() == 'y':
             return True
         # End if user does not want to perform another calculation
         else: 
+            print("=" * 48)
             print("Thank you for using the simple calculator app!")
+            print("=" * 48)
             
     # Error Messages        
     # Error message if input for operation is invalid
