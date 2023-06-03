@@ -1,9 +1,11 @@
-from user_interface import User_Interface
-from user_interface import Calculator
+from user_interface import UserInterface
+from calculator_operations import Calculator
+from calculator2 import Calculator2
 
 
-ui = User_Interface()
+ui = UserInterface()
 calc = Calculator()
+calc_2 = Calculator2()
 
 def calculator():
     try:
@@ -19,13 +21,13 @@ def calculator():
         
         # Perform operation based on user input
         if operation == 1:
-            answer = calc.add(num_1, num_2)
+            answer = calc_2.add(num_1, num_2)
         elif operation == 2:
-            answer = calc.subtract(num_1, num_2)
+            answer = calc_2.subtract(num_1, num_2)
         elif operation == 3:
-            answer = calc.multiply(num_1, num_2)
+            answer = calc_2.multiply(num_1, num_2)
         elif operation == 4:
-            answer = calc.divide(num_1, num_2)   
+            answer = calc_2.divide(num_1, num_2)   
         else:
             ui.inp_operation_error()
             calculator()          

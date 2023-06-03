@@ -1,4 +1,4 @@
-class User_Interface:
+class UserInterface:
     # Ask the user on what operation to use
     def ask_operation(self):
         print("=" * 48)
@@ -53,21 +53,3 @@ class User_Interface:
         print("=" * 48)
         print("Error: Invalid input!")
 
-# Calculator operations
-class Calculator:
-    def add(self, num_1, num_2):
-        answer = num_1 + num_2
-        return answer
-    
-    def subtract(self, num_1, num_2):
-        answer = num_1 - num_2
-        return answer
-    
-    def multiply(self, num_1, num_2):
-        answer = num_1 * num_2
-        return answer
-    
-    def divide(self, num_1, num_2):
-        answer = num_1 / num_2
-        return answer
-    
