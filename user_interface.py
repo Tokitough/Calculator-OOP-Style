@@ -25,7 +25,7 @@ class UserInterface:
         return num_2
     
     def result(self, answer):
-        print("The answer is", answer)
+        print(answer)
         print("=" * 48)
         
     # Perform another calculation
